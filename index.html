@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Geavanceerde To-do Lijst</title>
+  <link rel="stylesheet" href="css/style.css"/>
+</head>
+<body>
+  <div class="container">
+    <h1>📝 Mijn Geavanceerde To-do Lijst</h1>
+
+    <div class="input-section">
+      <input type="text" id="todo-input" placeholder="Nieuwe taak..."/>
+      <button id="add-btn">Toevoegen</button>
+    </div>
+
+    <div class="filter-section">
+      <button data-filter="all" class="filter-btn active">Alles</button>
+      <button data-filter="open">Open</button>
+      <button data-filter="done">Voltooid</button>
+      <button id="sort-btn">Sorteer A-Z</button>
+      <button id="theme-toggle">🌙 Donkere modus</button>
+    </div>
+
+    <ul id="todo-list"></ul>
+
+    <button id="clear-btn">Alles wissen</button>
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

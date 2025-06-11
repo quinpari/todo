@@ -1,0 +1,115 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: var(--bg);
+  color: var(--text);
+  padding: 20px;
+  transition: background 0.3s, color 0.3s;
+}
+
+:root {
+  --bg: #f0f2f5;
+  --text: #333;
+  --card: #ffffff;
+}
+
+body.dark {
+  --bg: #1e1e1e;
+  --text: #f0f0f0;
+  --card: #2c2c2c;
+}
+
+.container {
+  max-width: 500px;
+  margin: auto;
+  background: var(--card);
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+.input-section,
+.filter-section {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+
+#todo-input {
+  flex: 1;
+  padding: 10px;
+  font-size: 16px;
+}
+
+button {
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+#add-btn {
+  background-color: #007bff;
+  color: white;
+}
+
+#add-btn:hover {
+  background-color: #0056b3;
+}
+
+.filter-btn.active,
+.filter-section button:hover {
+  background-color: #17a2b8;
+  color: white;
+}
+
+#todo-list {
+  list-style: none;
+  padding: 0;
+}
+
+#todo-list li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #f9f9f9;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+}
+
+body.dark #todo-list li {
+  background: #3a3a3a;
+}
+
+li.done span {
+  text-decoration: line-through;
+  color: gray;
+}
+
+li span {
+  flex: 1;
+  cursor: pointer;
+}
+
+li button {
+  margin-left: 5px;
+}
+
+#clear-btn {
+  background-color: #ffc107;
+  width: 100%;
+}
+
+#theme-toggle {
+  background-color: #343a40;
+  color: white;
+}
+
+.edit-input {
+  width: 100%;
+  padding: 6px;
+  font-size: 16px;
+}
